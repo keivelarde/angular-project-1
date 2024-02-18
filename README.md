@@ -1,3 +1,11 @@
+#CLone Repository
+First, navigate to the directory that you would like to clone the repository into using commands like:
+cd: to change your working directory.
+cd ../ to "go back" a level in your directory tree.
+Next, clone the remote repository and create a local copy on your machine using this command:
+git clone https://github.com/keivelarde/angular-project-1.git
+
+
 # AngularProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
