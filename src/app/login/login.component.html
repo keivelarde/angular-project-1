@@ -1,0 +1,165 @@
+<nav class="fixed w-full z-20 top-0 start-0">
+  <div
+    class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
+    <a
+      href="https://flowbite.com/"
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <span
+        class="self-center text-xl font-semibold font-sans whitespace-nowrap dark:text-gray-900"
+        >CompanyX</span
+      >
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <p-button label="Register" [style]="{ height: '90%' }"></p-button>
+      <!-- <button
+          type="button"
+          class="bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+        >
+          Get started
+        </button> -->
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+      id="navbar-sticky"
+    >
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg bg-none md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+      >
+        <li>
+          <a
+            href="#"
+            class="block py-2 px-3 rounded md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500"
+            aria-current="page"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+  <div
+    class="main-screen flex items-center md:justify-center justify-center h-screen"
+  >
+    <!-- <div
+      class="relative flex flex-col m-9 space-y-8 main-screen w-4/5 h-4/5 shadow-2xl rounded-2xl lg:flex-row lg:space-y-0"
+    > -->
+    <div
+      class="w-[300px] h-full lg:flex flex-col justify-center relative hidden ml-8"
+    >
+      <span class="text-4xl font-bold text-blue-800 mb-6 font-sans"
+        >Login now and Get Started!</span
+      >
+      <span class="text-lg text-black font-sans"
+        >Don't have an account yet?
+      </span>
+      <span class="text-md font-semibold font-sans"
+        ><a href="">Register Here</a>
+      </span>
+    </div>
+    <div
+      class="w-[700px] h-full lg:flex justify-center items-center relative hidden"
+    >
+      <img
+        src="../../assets/login-illus.png"
+        alt="img"
+        class="md:block hidden rounded-r-2xl object-cover w-[400px]"
+      />
+    </div>
+    <!-- left side -->
+    <div class="flex flex-col justify-center p-8 md:p-14">
+      <div class="py-3 flex justify-center mb-5">
+        <span class="text-4xl font-bold text-center text-blue-700"
+          >Login to your account</span
+        >
+      </div>
+
+      <div class="py-3 flex justify-center">
+        <input type="text" placeholder="Email" pInputText [(ngModel)]="value" />
+      </div>
+      <div class="py-3 flex justify-center">
+        <!-- <span class="mb-2 text-md">Password</span> -->
+        <input
+          type="text"
+          placeholder="Password"
+          pInputText
+          [(ngModel)]="value"
+        />
+      </div>
+      <div class="flex justify-center w-full">
+        <span class="font-bold text-md"><a href="">Forgot password?</a></span>
+      </div>
+      <div class="flex justify-center w-full py-4">
+        <p-button
+          routerLink="/home"
+          label="Login"
+          [style]="{ height: '90%' }"
+        ></p-button>
+      </div>
+      <!-- <button
+          class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300"
+        >
+          Sign in
+        </button> -->
+
+      <!-- <button
+          class="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-black hover:text-white"
+        >
+          <img src="google.svg" alt="img" class="w-6 h-6 inline mr-2" />
+          Sign in with Google
+        </button> -->
+      <!-- <div class="text-center text-gray-400">
+        Don't have an account?
+        <span class="font-bold text-black">Sign up for free</span>
+      </div> -->
+    </div>
+    <!-- {/* right side */} -->
+  </div>
+  <!-- </div> -->
+</body>
